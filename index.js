@@ -8,9 +8,12 @@
 // D. Add a new fruit, "grape", to the end of the array.
 // E. Delete the last fruit in the array.
 // F. Log the updated array.
-
-
-
+let fruits = ["apple","banana","cherry"]
+console.log(fruits[1])
+fruits[2]=("orange")
+fruits.push("grape")
+fruits.pop()
+console.log(fruits)
 // TASK 2: Objects - Create, Read, Update, Delete (CRUD)
 // A. Create an object called `student` with the keys: name, age, and grade. (add your own values)
 // B. Read (log) the student's age.
@@ -18,12 +21,31 @@
 // D. Add a new property `isGraduated` and set it to `true`.
 // E. Delete the `age` property from the object.
 // F. Log the updated student object.
+let student= {
+   name: "Annmary",
+   age: 17,
+   grade: "12th"
+}
+console.log(student.age)
 
+student.grade= "A+";
+student.isGraduted= true;
+delete student.age;
+console.log(student)
 
 
 // TASK 3: Functions - Create and Call Functions
 // A. Write a function called `calculateTotal` that takes two inputs: price and quantity.
 //    The function should return the total price by multiplying price by quantity.
+function calculateTotal(price,quantity){
+   return price*quantity;
+}
+let calculate1= calculateTotal(20,5)
+console.log(calculate1)
+let calculate2= calculateTotal(12,8)
+console.log(calculate2)
+let calculate3= calculateTotal(9,42)
+console.log(calculate3)
 
 
 
